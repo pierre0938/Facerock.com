@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+
+		form {
+			margin: 50px auto;
+			width: 50%;
+			padding: 20px;
+			background-color: #f2f2f2;
+			border-radius: 10px;
+		}
+
+		label {
+			display: block;
+			margin: 10px 0;
+			font-weight: bold;
+		}
+
+		input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="date"] {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			border: none;
+			background-color: #e6e6e6;
+		}
+
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			margin-top: 20px;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<label for="firstname">First Name</label>
+		<input type="text" id="firstname" name="firstname" required>
+
+		<label for="lastname">Last Name</label>
+		<input type="text" id="lastname" name="lastname" required>
+
+		<label for="birthdate">Birthdate</label>
+		<input type="date" id="birthdate" name="birthdate" required>
+
+		<label for="phonenumber">Phone Number</label>
+		<input type="tel" id="phonenumber" name="phonenumber" required>
+
+		<label for="email">Email</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="password">Password</label>
+		<input type="password" id="password" name="password" required minlength="8">
+        <span id="password-error"></span>
+
+		<label for="confirmpassword">Confirm Password</label>
+		<input type="password" id="confirmpassword" name="confirmpassword" required minlength="8">
+
+		<input type="submit" value="Create Account">
+	</form>
+</body>
+</html>
